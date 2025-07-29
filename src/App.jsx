@@ -12,7 +12,7 @@ import AlumniPage from './pages/AlumniPage';
 import Shop from './pages/Shop';
 import PublicationsPage from './pages/PublicationsPage';
 import GalleryPage from './pages/GalleryPage';
-import FAQPage from './pages/FaqPage';
+import FAQPage from './pages/FAQPage';
 import ContactPage from './pages/ContactPage';
 import AffiliatedOrgsPage from './pages/AffiliatedOrgsPage';
 import Header from './components/Header';
