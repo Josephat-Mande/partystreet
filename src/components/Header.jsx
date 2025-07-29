@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { navigationItems } from '../data/navigationData';
+import { navigationItems } from '../data/NavigationData';
 
 const Header = ({ activeSection, setActiveSection, mobileMenuOpen, setMobileMenuOpen }) => {
   return (
