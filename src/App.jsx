@@ -17,7 +17,7 @@ import ContactPage from './pages/ContactPage';
 import AffiliatedOrgsPage from './pages/AffiliatedOrgsPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import { navigationItems } from './data/navigationData';
+// import { navigationItems } from './data/NavigationData';
 import AcademicResources from './pages/AcademicResources';
 
 const SoboWebsite = () => {
