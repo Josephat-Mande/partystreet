@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ExploreCategories from './pages/ExploreCategories';
 import { 
   Calendar, 
   Phone, 
@@ -35,11 +36,13 @@ const App = () => {
 
   const navigation = [
     { name: 'Home', id: 'home' },
+    { name: 'Explore Categories', id: 'explore-categories' },
     { name: 'Services', id: 'services' },
     { name: 'Gallery', id: 'gallery' },
     { name: 'About', id: 'about' },
     { name: 'FAQ', id: 'faq' },
-    { name: 'Contact', id: 'contact' }
+    { name: 'Contact', id: 'contact' },
+    
   ];
 
   const Header = () => (
@@ -136,10 +139,10 @@ const App = () => {
                   Plan Your Event
                 </button>
                 <button 
-                  onClick={() => setCurrentPage('gallery')}
+                  onClick={() => setCurrentPage('explore-categories')}
                   className="px-8 py-4 border-2 border-pink-500 text-pink-600 rounded-full font-semibold hover:bg-pink-50 transition-all duration-300"
                 >
-                  View Gallery
+                  Explore Categories
                 </button>
               </div>
             </div>
@@ -420,7 +423,7 @@ const App = () => {
     const faqs = [
       {
         question: 'How far in advance should I book your services?',
-        answer: 'We recommend booking at least 4-6 weeks in advance for weddings and large events, and 2-3 weeks for smaller celebrations. However, we do accommodate last-minute requests when possible.'
+        answer: 'We recommend booking at least a weeks in advance with a 75% deposit. For weddings 2 months in advance with payment of 80% deposit and large events, and 2-3 weeks for smaller celebrations. However, we do accommodate last-minute requests when possible.'
       },
       {
         question: 'Do you provide all the decoration items?',
@@ -432,11 +435,11 @@ const App = () => {
       },
       {
         question: 'Do you offer wedding planning services?',
-        answer: 'Yes, we offer comprehensive wedding planning services including venue selection, vendor coordination, timeline management, and day-of coordination along with our decoration services.'
+        answer: 'No, we do not offer  wedding planning services . However we can do event planning for small events upon consultation.'
       },
       {
         question: 'What areas in Kenya do you serve?',
-        answer: 'We primarily serve Nairobi and surrounding areas, but we also travel to other parts of Kenya for destination events. Travel costs may apply for events outside our primary service area.'
+        answer: 'We serve all parts of the country and travel to other parts of Kenya for destination events. Travel costs may apply for events outside our primary service area.'
       },
       {
         question: 'Can I see examples of your previous work?',
@@ -448,7 +451,7 @@ const App = () => {
       },
       {
         question: 'Do you offer payment plans?',
-        answer: 'Yes, we offer flexible payment plans. Typically, we require a 50% deposit to secure your date, with the balance due before or on the day of the event. We can discuss payment schedules during our consultation.'
+        answer: 'Yes, we offer flexible payment plans. Typically, we require a 75% deposit for any event and 80%  for weddings deposit to secure your date, with the balance due before or on the day of the event. We can discuss payment schedules during our consultation.'
       }
     ];
 
@@ -579,6 +582,53 @@ const App = () => {
                   />
                 </div>
                 <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Number of People Attending</label>
+                  <input
+                    type="number"
+                    name="guestCount"
+                    value={formData.guestCount}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Indoors or Outdoors</label>
+                  <select
+                    name="venueType"
+                    value={formData.venueType}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                    required
+                  >
+                    <option value="">Select Venue Type</option>
+                    <option value="indoors">Indoors</option>
+                    <option value="outdoors">Outdoors</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Location</label>
+                  <input
+                    type="text"
+                    name="location"
+                    value={formData.location}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Theme of the Event</label>
+                  <input
+                    type="text"
+                    name="eventTheme"
+                    value={formData.eventTheme}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                    required
+                  />
+                </div>
+                <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Event Type</label>
                   <select
                     name="eventType"
@@ -593,7 +643,7 @@ const App = () => {
                     <option value="corporate">Corporate Event</option>
                     <option value="anniversary">Anniversary</option>
                     <option value="graduation">Graduation</option>
-                    <option value="other">Other</option>
+                    <option value="other">Kids Activity</option>
                   </select>
                 </div>
                 <div>
@@ -640,7 +690,7 @@ const App = () => {
                     <div>
                       <h3 className="font-semibold text-gray-800">Phone</h3>
                       <p className="text-gray-600">+254 745 707 463</p>
-                      <p className="text-gray-600">+254 743 837 929</p>
+                      <p className="text-gray-600">+254 745 319 372</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
@@ -690,8 +740,8 @@ const App = () => {
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Business Hours</h3>
                 <div className="space-y-2 text-gray-700">
                   <p><span className="font-medium">Monday - Friday:</span> 8:00 AM - 6:00 PM</p>
-                  <p><span className="font-medium">Saturday:</span> 9:00 AM - 5:00 PM</p>
-                  <p><span className="font-medium">Sunday:</span> By appointment only</p>
+                  <p><span className="font-medium">Saturday:</span> 8:00 AM - 6:00 PM</p>
+                  <p><span className="font-medium">Sunday:</span> 8:00 AM - 6:00 PM</p>
                 </div>
               </div>
             </div>
@@ -786,6 +836,8 @@ const App = () => {
         return <FAQPage />;
       case 'contact':
         return <ContactPage />;
+      case 'explore-categories':
+        return <ExploreCategories />;
       default:
         return <HomePage />;
     }
