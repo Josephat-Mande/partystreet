@@ -11,8 +11,19 @@ import FAQPage from './pages/FAQPage';
 import ContactPage from './pages/ContactPage';
 import ExploreCategories from './pages/ExploreCategories';
 
+// File-based routes mapping
+const routes = {
+  '/': HomePage,
+  '/explore-categories': ExploreCategories,
+  '/services': ServicesPage,
+  '/gallery': GalleryPage,
+  '/about': AboutPage,
+  '/faq': FAQPage,
+  '/contact': ContactPage,
+};
+
 const App = () => {
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPath, setCurrentPath] = useState(window.location.pathname);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -22,48 +33,41 @@ const App = () => {
     });
   }, []);
 
-  const navigation = [
-    { name: 'Home', id: 'home' },
-    { name: 'Explore Categories', id: 'explore-categories' },
-    { name: 'Services', id: 'services' },
-    { name: 'Gallery', id: 'gallery' },
-    { name: 'About', id: 'about' },
-    { name: 'FAQ', id: 'faq' },
-    { name: 'Contact', id: 'contact' },
-  ];
+  useEffect(() => {
+    const onPopState = () => setCurrentPath(window.location.pathname);
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
 
-  const renderCurrentPage = () => {
-    switch (currentPage) {
-      case 'home':
-        return <HomePage setCurrentPage={setCurrentPage} />;
-      case 'services':
-        return <ServicesPage />;
-      case 'gallery':
-        return <GalleryPage setCurrentPage={setCurrentPage} />;
-      case 'about':
-        return <AboutPage />;
-      case 'faq':
-        return <FAQPage setCurrentPage={setCurrentPage} />;
-      case 'contact':
-        return <ContactPage />;
-      case 'explore-categories':
-        return <ExploreCategories />;
-      default:
-        return <HomePage setCurrentPage={setCurrentPage} />;
-    }
+  const navigate = (path) => {
+    window.history.pushState({}, '', path);
+    setCurrentPath(path);
   };
+
+  // Use file-based routing by matching the path to the routes object
+  const CurrentPage = routes[currentPath] || HomePage;
+
+  const navigation = [
+    { name: 'Home', id: '/' },
+    { name: 'Explore Categories', id: '/explore-categories' },
+    { name: 'Services', id: '/services' },
+    { name: 'Gallery', id: '/gallery' },
+    { name: 'About', id: '/about' },
+    { name: 'FAQ', id: '/faq' },
+    { name: 'Contact', id: '/contact' },
+  ];
 
   return (
     <div className="min-h-screen bg-white">
-      <Header 
+      <Header
         navigation={navigation}
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
+        currentPage={currentPath}
+        setCurrentPage={navigate}
         mobileMenuOpen={mobileMenuOpen}
         setMobileMenuOpen={setMobileMenuOpen}
       />
-      {renderCurrentPage()}
-      <Footer navigation={navigation} setCurrentPage={setCurrentPage} />
+      <CurrentPage setCurrentPage={navigate} />
+      <Footer navigation={navigation} setCurrentPage={navigate} />
     </div>
   );
 };

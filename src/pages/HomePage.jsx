@@ -55,7 +55,7 @@ const HomePage = ({ setCurrentPage }) => (
             </div>
           </div>
           <div className="relative font-merienda">
-            <div className="w-full h-96 bg-gradient-to-br from-pink-300 to-purple-400 rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500"></div>
+            <div className="w-full h-96 bg-gradient-to-br from-pink-300 to-purple-400 rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500 animate-pulse"></div>
             <div className="absolute inset-4 bg-white rounded-2xl shadow-lg flex items-center justify-center">
               <div className="text-center space-y-4">
                 <Heart className="w-16 h-16 text-pink-500 mx-auto animate-pulse" />

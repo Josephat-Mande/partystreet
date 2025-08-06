@@ -61,16 +61,16 @@ const AboutPage = () => (
       </div>
 
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6">Meet Our Team</h2>
-        <p className="text-gray-600 mb-10">
+        <h2 className="text-3xl font-bold text-gray-800 mb-6 font-merienda">Meet Our Team</h2>
+        <p className="text-gray-600 mb-10 font-poiret">
           Our dedicated team of event planners, designers, and coordinators work tirelessly to ensure every event is a success. We believe in collaboration, creativity, and attention to detail.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {/* Example team members, replace with real data */}
           <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center">
             <img src="/team/jane.jpg" alt="Jane Mwangi" className="w-24 h-24 rounded-full mb-4 object-cover" />
-            <h4 className="text-lg font-bold text-gray-800">Jane Mwangi</h4>
-            <p className="text-pink-500 font-semibold mb-2">Lead Planner</p>
+            <h4 className="text-lg font-bold text-gray-800">Maureen Anyango</h4>
+            <p className="text-pink-500 font-semibold mb-2"> C E O</p>
             <p className="text-gray-600 text-sm">Expert in event logistics and creative concepts.</p>
           </div>
           <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center">
@@ -81,7 +81,7 @@ const AboutPage = () => (
           </div>
           <div className="bg-white rounded-2xl shadow p-6 flex flex-col items-center">
             <img src="/team/susan.jpg" alt="Susan Wanjiru" className="w-24 h-24 rounded-full mb-4 object-cover" />
-            <h4 className="text-lg font-bold text-gray-800">Susan Wanjiru</h4>
+            <h4 className="text-lg font-bold text-gray-800">Susan </h4>
             <p className="text-pink-500 font-semibold mb-2">Client Relations</p>
             <p className="text-gray-600 text-sm">Ensures every client feels valued and heard.</p>
           </div>
