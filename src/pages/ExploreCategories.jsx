@@ -52,7 +52,7 @@ const ExploreCategories = () => {
       itemCount: 15
     },
     {
-      id: 'backdrops',
+      id: 'balloon backdrops',
       name: 'Backdrops & Walls',
       icon: '🎭',
       color: 'from-orange-500 to-red-500',
@@ -90,7 +90,40 @@ const ExploreCategories = () => {
       color: 'from-rose-500 to-pink-500',
       description: 'Fresh and artificial floral decorations',
       itemCount: 30
+    },
+    {
+      id: 'cutlery',
+      name: 'Cutlery & Tableware',
+      icon: '🍽️',
+      color: 'from-gray-500 to-slate-500',
+      description: 'Elegant cutlery and tableware for your events',
+      itemCount: 10
+    },
+    {
+      id: 'candle stands',
+      name: 'Candle Stands & Holders',
+      icon: '🕯️',
+      color: 'from-amber-500 to-yellow-500',
+      description: 'Elegant candle stands and holders for your events',
+      itemCount: 12
+    },
+    {
+      id: 'flower centrepieces',
+      name: 'Flower Centrepieces',
+      icon: '�',
+      color: 'from-pink-500 to-rose-500',
+      description: 'Beautiful floral arrangements for your tables',
+      itemCount: 15
+    },
+  {
+      id: 'kids-activities',
+      name: 'Kids Activities',
+      icon: '🎈',
+      color: 'from-pink-500 to-rose-500',
+      description: 'Fun and engaging activities for children',
+      itemCount: 10
     }
+  
   ];
 
   const items = {
@@ -145,10 +178,10 @@ const ExploreCategories = () => {
       },
       {
         id: 'c2',
-        name: 'Ghost Acrylic Chairs',
+        name: 'Paris',
         price: 450,
         capacity: 'Per chair',
-        image: 'from-blue-300 to-blue-500',
+        image: '/paris.png',
         rating: 4.8,
         pros: ['Modern design', 'Space illusion', 'Easy cleaning', 'Weather resistant'],
         cons: ['Show fingerprints', 'Limited comfort'],
@@ -156,23 +189,168 @@ const ExploreCategories = () => {
       },
       {
         id: 'c3',
-        name: 'Vintage Wooden Chairs',
+        name: 'Aria Purple',
         price: 280,
         capacity: 'Per chair',
-        image: 'from-amber-400 to-amber-600',
+        image: '/aria-purple.png',
+        rating: 4.6,
+        pros: ['Rustic charm', 'Comfortable', 'Affordable', 'Photo-friendly'],
+        cons: ['Weather sensitive', 'Heavier weight'],
+        features: ['Solid wood', 'Natural finish', 'Cushion compatible', 'Vintage style']
+      },
+    
+      {
+        id: 'c4',
+        name: 'Chiavari White',
+        price: 400,
+        capacity: 'Per chair',
+        image: '/chiavari-white.png',
+        rating: 4.9,
+        pros: ['Classic elegance', 'Lightweight', 'Stackable', 'Versatile'],
+        cons: ['Higher cost', 'Requires cushions'],
+        features: ['Wood or resin', 'Multiple colors', 'Event standard', 'Durable']
+      },
+      {
+        id: 'c5',
+        name: 'Clear Ghost',
+        price: 500,
+        capacity: 'Per chair',
+        image: '/clear-ghost.png',
+        rating: 4.7,
+        pros: ['Modern look', 'Space-saving', 'Easy to clean', 'Weather resistant'],
+        cons: ['Show fingerprints', 'Limited comfort'],
+        features: ['Clear acrylic', 'Contemporary design', 'Stackable', 'Indoor/outdoor']
+      },
+      {
+        id: 'c6',
+        name: 'White Ghost',
+        price: 200,
+        capacity: 'Per chair',
+        image: '/white-ghost.png',
+        rating: 4.5,
+        pros: ['Compact', 'Easy storage', 'Affordable', 'Lightweight'],
+        cons: ['Basic design', 'Limited comfort'],
+        features: ['Metal frame', 'Wooden seat', 'Folding mechanism', 'Indoor/outdoor']
+      },
+      {
+        id: 'c7',
+        name: 'Black Ghost',
+        price: 150,
+        capacity: 'Per chair',
+        image: '/black-ghost.png',
+        rating: 4.6,
+        pros: ['Rustic charm', 'Comfortable', 'Affordable', 'Photo-friendly'],
+        cons: ['Weather sensitive', 'Heavier weight'],
+        features: ['Solid wood', 'Natural finish', 'Cushion compatible', 'Vintage style']
+      },
+      {
+        id: 'c8',
+        name: 'Chiavari Gold',
+        price: 600,
+        capacity: 'Per chair',
+        image: '/chiavari-gold.png',
+        rating: 4.8,
+        pros: ['Luxury look', 'Lightweight', 'Stackable', 'Versatile'],
+        cons: ['Higher cost', 'Requires cushions'],
+        features: ['Wood or resin', 'Gold finish', 'Event standard', 'Durable']
+      },
+      {
+        id: 'c9',
+        name: 'Black Vogue',
+        price: 300,
+        capacity: 'Per chair',
+        image: '/black-vogue.png',
+        rating: 4.7,
+        pros: ['Elegant design', 'Comfortable', 'Stackable', 'Durable'],
+        cons: ['Higher cost', 'Requires cushions'],
+        features: ['Resin material', 'Blue finish', 'Lightweight', 'Event standard']
+      },
+      {
+        id: 'c10',
+        name: 'White Jade',
+        price: 300,
+        capacity: 'Per chair',
+        image: '/white-jade.png',
+        rating: 4.7,
+        pros: ['Elegant design', 'Comfortable', 'Stackable', 'Durable'],
+        cons: ['Higher cost', 'Requires cushions'],
+        features: ['Resin material', 'White finish', 'Lightweight', 'Event standard']
+      },
+      {
+        id: 'c11',
+        name: 'Clear Jade',
+        price: 300,
+        capacity: 'Per chair',
+        image: '/clear-jade.png',
+        rating: 4.7,
+        pros: ['Elegant design', 'Comfortable', 'Stackable', 'Durable'],
+        cons: ['Higher cost', 'Requires cushions'],
+        features: ['Resin material', 'Gold finish', 'Lightweight', 'Event standard']
+      },
+      {
+        id: 'c12',
+        name: 'O Back',
+        price: 300,
+        capacity: 'Per chair',
+        image: '/o-back-gold.png',
+        rating: 4.7,
+        pros: ['Elegant design', 'Comfortable', 'Stackable', 'Durable'],
+        cons: ['Higher cost', 'Requires cushions'],
+        features: ['Resin material', 'Gold finish', 'Lightweight', 'Event standard']
+      },
+      {
+        id: 'c13',
+        name: 'O Back Black',
+        price: 300,
+        capacity: 'Per chair',
+        image: '/o-back-black.png',
+        rating: 4.7,
+        pros: ['Elegant design', 'Comfortable', 'Stackable', 'Durable'],
+        cons: ['Higher cost', 'Requires cushions'],
+        features: ['Resin material', 'Gold finish', 'Lightweight', 'Event standard']
+      },
+      {
+        id: 'c14',
+        name: 'Infinity',
+        price: 300,
+        capacity: 'Per chair',
+        image: '/infinity.png',
+        rating: 4.7,
+        pros: ['Elegant design', 'Comfortable', 'Stackable', 'Durable'],
+        cons: ['Higher cost', 'Requires cushions'],
+        features: ['Resin material', 'Gold finish', 'Lightweight', 'Event standard']
+      },
+      {
+        id: 'c15',
+        name: 'Aria',
+        price: 450,
+        capacity: 'Per chair',
+        image: '/aria.png',
+        rating: 4.8,
+        pros: ['Modern design', 'Space illusion', 'Easy cleaning', 'Weather resistant'],
+        cons: ['Show fingerprints', 'Limited comfort'],
+        features: ['Clear acrylic', 'Contemporary style', 'Stackable', 'Indoor/outdoor']
+      },
+      {
+        id: 'c16',
+        name: 'Aria Pink',
+        price: 280,
+        capacity: 'Per chair',
+        image: '/aria-pink.png',
         rating: 4.6,
         pros: ['Rustic charm', 'Comfortable', 'Affordable', 'Photo-friendly'],
         cons: ['Weather sensitive', 'Heavier weight'],
         features: ['Solid wood', 'Natural finish', 'Cushion compatible', 'Vintage style']
       }
+
     ],
     balloons: [
       {
         id: 'b1',
-        name: 'Premium Balloon Arch',
+        name: 'Aria Pink',
         price: 5500,
         capacity: '4m wide arch',
-        image: 'from-pink-400 to-purple-600',
+        image: '/aria-pink.png',
         rating: 4.9,
         popular: true,
         pros: ['Eye-catching', 'Customizable colors', 'Photo backdrop', 'Long-lasting'],
@@ -260,14 +438,14 @@ const ExploreCategories = () => {
 
   if (selectedItem) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+      <div className="min-h-screen mt-6 bg-black to-slate-900 text-white">
         {/* Item Detail View */}
         <div className="relative">
           <button
             onClick={() => setSelectedItem(null)}
             className="fixed top-6 left-6 z-50 w-12 h-12 bg-white/10 backdrop-blur-lg rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300"
           >
-            <ArrowLeft className="w-6 h-6" />
+            <ArrowLeft className="w-6 h-6 text-black" />
           </button>
 
           <div className="pt-20 pb-12">
@@ -281,7 +459,7 @@ const ExploreCategories = () => {
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-center text-white">
                         <Eye className="w-16 h-16 mx-auto mb-4 opacity-60" />
-                        <p className="text-lg font-medium">Product Preview</p>
+                        {/* <p className="text-lg font-medium">Product Preview</p> */}
                       </div>
                     </div>
                   </div>
@@ -402,7 +580,7 @@ const ExploreCategories = () => {
 
   if (selectedCategory) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white font-merienda">
+      <div className="min-h-screen mt-6 bg-black to-slate-900 text-white font-merienda">
         {/* Category Items View */}
         <div className="relative">
           <button
@@ -524,16 +702,16 @@ const ExploreCategories = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+    <div className="min-h-screen bg-black text-white">
       {/* Categories Overview */}
       <div className="pt-20 pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <h1 className="text-6xl mt-2 font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent font-merienda">
               Explore Categories
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto font-poiret">
               Discover our comprehensive collection of premium event equipment and decorations. 
               Each category features detailed specifications, pricing, and professional insights.
             </p>
@@ -554,11 +732,11 @@ const ExploreCategories = () => {
                     {category.icon}
                   </div>
                   
-                  <h3 className="text-xl font-bold mb-3 group-hover:text-purple-300 transition-colors duration-300">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-purple-300 transition-colors duration-300 font-merienda">
                     {category.name}
                   </h3>
                   
-                  <p className="text-gray-400 text-sm mb-4 leading-relaxed">
+                  <p className="text-gray-400 text-sm mb-4 leading-relaxed font-poiret">
                     {category.description}
                   </p>
                   
