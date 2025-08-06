@@ -167,7 +167,7 @@ const ExploreCategories = () => {
       {
         id: 'c1',
         name: 'Crossback',
-        price: 350,
+        price: 450,
         capacity: 'Per chair',
         image: '/crossback.png',
         rating: 4.9,
@@ -179,7 +179,7 @@ const ExploreCategories = () => {
       {
         id: 'c2',
         name: 'Paris',
-        price: 450,
+        price: 500,
         capacity: 'Per chair',
         image: '/paris.png',
         rating: 4.8,
@@ -190,7 +190,7 @@ const ExploreCategories = () => {
       {
         id: 'c3',
         name: 'Aria Purple',
-        price: 280,
+        price: 500,
         capacity: 'Per chair',
         image: '/aria-purple.png',
         rating: 4.6,
@@ -202,7 +202,7 @@ const ExploreCategories = () => {
       {
         id: 'c4',
         name: 'Chiavari White',
-        price: 400,
+        price: 200,
         capacity: 'Per chair',
         image: '/chiavari-white.png',
         rating: 4.9,
@@ -213,7 +213,7 @@ const ExploreCategories = () => {
       {
         id: 'c5',
         name: 'Clear Ghost',
-        price: 500,
+        price: 300,
         capacity: 'Per chair',
         image: '/clear-ghost.png',
         rating: 4.7,
@@ -224,7 +224,7 @@ const ExploreCategories = () => {
       {
         id: 'c6',
         name: 'White Ghost',
-        price: 200,
+        price: 400,
         capacity: 'Per chair',
         image: '/white-ghost.png',
         rating: 4.5,
@@ -235,7 +235,7 @@ const ExploreCategories = () => {
       {
         id: 'c7',
         name: 'Black Ghost',
-        price: 150,
+        price: 400,
         capacity: 'Per chair',
         image: '/black-ghost.png',
         rating: 4.6,
@@ -246,7 +246,7 @@ const ExploreCategories = () => {
       {
         id: 'c8',
         name: 'Chiavari Gold',
-        price: 600,
+        price: 200,
         capacity: 'Per chair',
         image: '/chiavari-gold.png',
         rating: 4.8,
@@ -257,7 +257,7 @@ const ExploreCategories = () => {
       {
         id: 'c9',
         name: 'Black Vogue',
-        price: 300,
+        price: 600,
         capacity: 'Per chair',
         image: '/black-vogue.png',
         rating: 4.7,
@@ -268,7 +268,7 @@ const ExploreCategories = () => {
       {
         id: 'c10',
         name: 'White Jade',
-        price: 300,
+        price: 500,
         capacity: 'Per chair',
         image: '/white-jade.png',
         rating: 4.7,
@@ -279,7 +279,7 @@ const ExploreCategories = () => {
       {
         id: 'c11',
         name: 'Clear Jade',
-        price: 300,
+        price: 500,
         capacity: 'Per chair',
         image: '/clear-jade.png',
         rating: 4.7,
@@ -290,7 +290,7 @@ const ExploreCategories = () => {
       {
         id: 'c12',
         name: 'O Back',
-        price: 300,
+        price: 500,
         capacity: 'Per chair',
         image: '/o-back-gold.png',
         rating: 4.7,
@@ -301,7 +301,7 @@ const ExploreCategories = () => {
       {
         id: 'c13',
         name: 'O Back Black',
-        price: 300,
+        price: 500,
         capacity: 'Per chair',
         image: '/o-back-black.png',
         rating: 4.7,
@@ -312,7 +312,7 @@ const ExploreCategories = () => {
       {
         id: 'c14',
         name: 'Infinity',
-        price: 300,
+        price: 500,
         capacity: 'Per chair',
         image: '/infinity.png',
         rating: 4.7,
@@ -323,7 +323,7 @@ const ExploreCategories = () => {
       {
         id: 'c15',
         name: 'Aria',
-        price: 450,
+        price: 500,
         capacity: 'Per chair',
         image: '/aria.png',
         rating: 4.8,
@@ -334,7 +334,7 @@ const ExploreCategories = () => {
       {
         id: 'c16',
         name: 'Aria Pink',
-        price: 280,
+        price: 500,
         capacity: 'Per chair',
         image: '/aria-pink.png',
         rating: 4.6,
