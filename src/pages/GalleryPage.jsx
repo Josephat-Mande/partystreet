@@ -1,81 +1,54 @@
 import React from 'react';
 
-const GalleryPage = () => {
-  const mediaItems = [
-    {
-      title: "Guest Lectures 2025",
-      type: "Event",
-      date: "June 2025",
-      thumbnail: "/lectures.png"
-    },
-    {
-      title: "Alumni Networking Session",
-      type: "Event",
-      date: "May 2025",
-      thumbnail: "/alumni.png"
-    },
-    {
-      title: "Student Life at School of Business",
-      type: "Student Life",
-      date: "April 2025",
-      thumbnail: "/student-life.png"
-    },
-    {
-      title: "Sports Tournament Highlights",
-      type: "Projects",
-      date: "March 2025",
-      thumbnail: "/tournament.png"
-    },
-    {
-      title: "Entrepreneurship Workshop",
-      type: "Event",
-      date: "February 2025",
-      thumbnail: "/Business.png"
-    },
-    {
-      title: "Campus Tour for New Students",
-      type: "Student Life",
-      date: "January 2025",
-      thumbnail: "/campus.png"
-    }
-  ];
+const GalleryPage = ({ setCurrentPage }) => (
+  <div className="pt-32 pb-20">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-16">
+        <h1 className="text-5xl font-bold text-gray-800 mb-6">Our Gallery</h1>
+        <p className="text-xl text-gray-600">Explore our beautiful creations and get inspired for your next event</p>
+      </div>
 
-  return (
-    <div className="space-y-6 p-6">
-      <div className="bg-white rounded-lg p-6 border border-gray-200">
-        <h1 className="text-3xl font-bold text-gray-800 mb-6">Multimedia Gallery</h1>
-
-        <div className="flex gap-4 mb-6">
-          <button className="px-4 py-2 bg-green-600 text-white rounded-lg">All</button>
-          <button className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">Events</button>
-          <button className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">Student Life</button>
-          <button className="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">Projects</button>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {mediaItems.map((item, index) => (
-            <div key={index} className="border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
-              <div className="h-48 bg-gray-200 overflow-hidden">
-                <img src={item.thumbnail} alt={item.title} className="w-full h-full object-cover" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          { category: 'Wedding', image: '/wedding.png' },
+          { category: 'Birthday', image: '/birthday.png' },
+          { category: 'Corporate', image: '/corporate.png' },
+          { category: 'Wedding', image: '/wedding3.png' },
+          { category: 'Birthday', image: '/birthday2.png' },
+          { category: 'Corporate', image: '/corporate2.png' },
+          { category: 'Wedding', image: '/wedding2.png' },
+          { category: 'Birthday', image: '/birthday3.png' },
+          { category: 'Corporate', image: '/corporate3.png' },
+          { category: 'Wedding', image: '/wedding4.png' },
+          { category: 'Birthday', image: '/birthday4.png' },
+          { category: 'Corporate', image: '/corporate4.png' }
+        ].map((item, index) => (
+          <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+            <div className={`h-64 bg-gradient-to-br ${item.color} relative`}>
+              <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300"></div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <img src={item.image} alt={`${item.category} Event`} className="text-black opacity-60 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              <div className="p-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="bg-green-100 text-green-600 px-2 py-1 rounded text-xs font-semibold">
-                    {item.type}
-                  </span>
-                  <span className="text-sm text-gray-500">{item.date}</span>
-                </div>
-                <h3 className="font-semibold text-gray-800 mb-2">{item.title}</h3>
-                <button className="text-green-600 hover:text-green-700 text-sm font-medium">
-                  View Gallery
-                </button>
+              <div className="absolute bottom-4 left-4 right-4">
+                <p className="text-black font-semibold text-lg">{item.category} Event</p>
+                <p className="text-black/80 text-sm">Beautiful decoration setup</p>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="text-center mt-16">
+        <p className="text-gray-600 mb-6">Want to see more of our work?</p>
+        <button 
+          onClick={() => setCurrentPage('contact')}
+          className="px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+        >
+          Get In Touch
+        </button>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 export default GalleryPage;

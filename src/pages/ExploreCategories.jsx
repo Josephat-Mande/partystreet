@@ -17,6 +17,7 @@ import {
   Shield,
   Award
 } from 'lucide-react';
+import './fonts.css';
 
 const ExploreCategories = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -132,10 +133,10 @@ const ExploreCategories = () => {
     chairs: [
       {
         id: 'c1',
-        name: 'Chiavari Gold Chairs',
+        name: 'Crossback',
         price: 350,
         capacity: 'Per chair',
-        image: 'from-yellow-400 to-yellow-600',
+        image: '/crossback.png',
         rating: 4.9,
         popular: true,
         pros: ['Elegant design', 'Comfortable', 'Stackable', 'Durable'],
@@ -275,6 +276,7 @@ const ExploreCategories = () => {
                 {/* Image Section */}
                 <div className="space-y-6">
                   <div className={`h-96 bg-gradient-to-br ${selectedItem.image} rounded-3xl shadow-2xl relative overflow-hidden`}>
+                    <img src={selectedItem.image} alt={selectedItem.name} className="w-full h-full object-cover object-cover object-center " style={{ objectFit: 'cover', objectPosition: 'center' }} />
                     <div className="absolute inset-0 bg-black/20"></div>
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-center text-white">
@@ -295,7 +297,7 @@ const ExploreCategories = () => {
                 <div className="space-y-8">
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <h1 className="text-4xl font-bold">{selectedItem.name}</h1>
+                      <h1 className="text-4xl font-bold font-merienda">{selectedItem.name}</h1>
                       <button
                         onClick={() => toggleFavorite(selectedItem.id)}
                         className={`w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 ${
@@ -325,7 +327,7 @@ const ExploreCategories = () => {
                     <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 mb-8">
                       <div className="flex items-center justify-between">
                         <div>
-                          <p className="text-3xl font-bold text-green-400">KSh {selectedItem.price.toLocaleString()}</p>
+                          <p className="text-3xl font-bold text-green-400 font-merienda">KSh {selectedItem.price.toLocaleString()}</p>
                           <p className="text-gray-300">{selectedItem.capacity}</p>
                         </div>
                         <button className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
@@ -338,7 +340,7 @@ const ExploreCategories = () => {
 
                   {/* Features */}
                   <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6">
-                    <h3 className="text-xl font-bold mb-4 flex items-center">
+                    <h3 className="text-xl font-bold mb-4 flex items-center font-merienda">
                       <Sparkles className="w-6 h-6 mr-2 text-purple-400" />
                       Features
                     </h3>
@@ -353,7 +355,7 @@ const ExploreCategories = () => {
                   </div>
 
                   {/* Pros and Cons */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 font-merienda">
                     <div className="bg-green-500/10 backdrop-blur-lg rounded-2xl p-6">
                       <h3 className="text-lg font-bold mb-4 text-green-400">Pros</h3>
                       <div className="space-y-2">
@@ -400,7 +402,7 @@ const ExploreCategories = () => {
 
   if (selectedCategory) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white font-merienda">
         {/* Category Items View */}
         <div className="relative">
           <button
@@ -452,6 +454,7 @@ const ExploreCategories = () => {
                     onClick={() => setSelectedItem(item)}
                   >
                     <div className={`h-48 bg-gradient-to-br ${item.image} relative overflow-hidden`}>
+                      <img src={item.image} alt={item.name} className="w-full h-full object-cover absolute inset-0" />
                       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300"></div>
                       <div className="absolute top-4 right-4">
                         <button

@@ -1,22 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap'); */
 
-.font-fancy {
+/* .font-fancy {
   font-family: 'Playfair Display', serif;
-}
+} */
 
 
-/* <style>
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poiret+One&display=swap');
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Poiret+One&family=Sofia&display=swap');
 
-<style>
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Merienda:wght@300..900&family=Poiret+One&family=Sofia&display=swap');
-</style>
-</style>
-</style>
-</style>  */
+.font-arizonia {
+  font-family: 'Arizonia', cursive;
+}
+.font-merienda {
+  font-family: 'Merienda', cursive;
+}
+.font-poiret {
+  font-family: 'Poiret One', cursive;
+}
+.font-sofia {
+  font-family: 'Sofia', cursive;
+}
