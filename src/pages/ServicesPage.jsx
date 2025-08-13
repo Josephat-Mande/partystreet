@@ -3,10 +3,10 @@ import { Heart, Gift, Users, Calendar, ChevronRight } from 'lucide-react';
 import './fonts.css';
 
 const ServicesPage = () => (
-  <div className="pt-32 pb-20" data-aos="fade-up font-merienda">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-merienda">
+  <div className="pt-32 pb-20" data-aos="fade-up ">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
       <div className="text-center mb-16">
-        <h1 className="text-5xl font-bold text-gray-800 mb-6 font-merienda">Our Services</h1>
+        <h1 className="text-5xl font-bold text-gray-800 mb-6 ">Our Services</h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
           From intimate gatherings to grand celebrations, we bring your vision to life with our comprehensive event planning and decoration services.
         </p>

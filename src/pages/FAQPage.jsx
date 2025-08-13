@@ -43,7 +43,7 @@ const FAQPage = ({ setCurrentPage }) => {
   return (
     <div className="pt-32 pb-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 font-merienda">
+        <div className="text-center mb-16 ">
           <h1 className="text-5xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h1>
           <p className="text-xl text-gray-600">
             Find answers to common questions about our services and process
@@ -57,7 +57,7 @@ const FAQPage = ({ setCurrentPage }) => {
                 className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
                 onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
               >
-                <h3 className="text-lg font-semibold text-gray-800 pr-4 font-merienda">{faq.question}</h3>
+                <h3 className="text-lg font-semibold text-gray-800 pr-4 ">{faq.question}</h3>
                 <ChevronDown
                   className={`w-6 h-6 text-pink-500 transition-transform duration-200 ${
                     openFAQ === index ? 'transform rotate-180' : ''

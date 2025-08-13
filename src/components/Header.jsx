@@ -4,7 +4,7 @@ import '../pages/fonts.css';
 
 const Header = ({ navigation, currentPage, setCurrentPage, mobileMenuOpen, setMobileMenuOpen }) => (
   <header className="fixed top-0 w-full bg-white/95 backdrop-blur-lg shadow-lg z-50">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-merienda">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
       <div className="flex justify-between items-center py-4">
         <div className="flex items-center space-x-2">
           <div className="w-16 h-16 rounded-full flex items-center justify-center overflow-hidden">

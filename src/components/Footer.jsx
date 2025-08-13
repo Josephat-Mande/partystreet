@@ -10,9 +10,9 @@ const Footer = ({ navigation, setCurrentPage }) => (
             {/* <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full flex items-center justify-center">
               <Sparkles className="w-5 h-5 text-white" />
             </div> */}
-            <span className="text-xl font-bold font-merienda">Party street Kenya</span>
+            <span className="text-xl font-bold ">Party street Kenya</span>
           </div>
-          <p className="text-gray-400 font-merienda">
+          <p className="text-gray-400 ">
             Creating magical moments and unforgettable experiences through exceptional event planning and decoration services.
           </p>
         </div>

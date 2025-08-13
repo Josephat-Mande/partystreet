@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Instagram, Facebook, Twitter, MessageCircle } from 'lucide-react';
+import emailjs from 'emailjs-com';
 import './fonts.css';
 
 const ContactPage = () => {
@@ -15,6 +16,7 @@ const ContactPage = () => {
     eventDate: '',
     message: ''
   });
+  const [sending, setSending] = useState(false);
 
   const handleInputChange = (e) => {
     setFormData({
@@ -25,18 +27,33 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Thank you for your inquiry! We\'ll get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      guestCount: '',
-      venueType: '',
-      location: '',
-      eventTheme: '',
-      eventType: '',
-      eventDate: '',
-      message: ''
+    setSending(true);
+
+    emailjs.send(
+      'YOUR_SERVICE_ID', //  EmailJS service ID
+      'YOUR_TEMPLATE_ID', // EmailJS template ID
+      formData,
+      'YOUR_USER_ID' //  EmailJS public key
+    )
+    .then(() => {
+      alert('Thank you for your inquiry! We\'ll get back to you soon.');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        guestCount: '',
+        venueType: '',
+        location: '',
+        eventTheme: '',
+        eventType: '',
+        eventDate: '',
+        message: ''
+      });
+      setSending(false);
+    })
+    .catch(() => {
+      alert('Sorry, there was an error sending your message. Please try again.');
+      setSending(false);
     });
   };
 
@@ -178,9 +195,10 @@ const ContactPage = () => {
               </div>
               <button
                 type="submit"
+                disabled={sending}
                 className="w-full px-6 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               >
-                Send Inquiry
+                {sending ? 'Sending...' : 'Send Inquiry'}
               </button>
             </form>
           </div>

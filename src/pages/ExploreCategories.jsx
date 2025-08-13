@@ -100,7 +100,7 @@ const ExploreCategories = () => {
       itemCount: 10
     },
     {
-      id: 'candle stands',
+      id: 'candle_stands',
       name: 'Candle Stands & Holders',
       icon: '🕯️',
       color: 'from-amber-500 to-yellow-500',
@@ -130,38 +130,116 @@ const ExploreCategories = () => {
     tents: [
       {
         id: 't1',
-        name: 'Luxury Wedding Marquee',
-        price: 15000,
-        capacity: '150-200 guests',
-        image: 'from-blue-400 to-blue-600',
+        name: 'Bline Tent',
+        price: 35000,
+        capacity: '50 guests for 10 by 10 and 20 people for 6 by 6',
+        image: '/tents/Bline.png',
         rating: 4.9,
         popular: true,
-        pros: ['Weather resistant', 'Elegant design', 'Easy setup', 'LED lighting ready'],
+        pros: ['Weather resistant', 'Elegant design', 'Easy setup', 'Sunproof'],
         cons: ['Requires large space', 'Higher cost'],
-        features: ['12m x 20m', 'White canvas', 'Clear windows', 'Flooring included']
+        features: ['10m x 10m', 'White canvas', 'Clear windows', 'Flooring included']
       },
       {
         id: 't2',
-        name: 'Garden Party Gazebo',
-        price: 8000,
-        capacity: '50-80 guests',
-        image: 'from-green-400 to-green-600',
+        name: 'Canopy tent',
+        price: 12000,
+        capacity: '20-30 guests',
+        image: '/tents/Canopy.png',
         rating: 4.7,
-        pros: ['Compact size', 'Quick setup', 'Affordable', 'Versatile'],
-        cons: ['Limited capacity', 'Basic design'],
-        features: ['6m x 8m', 'Waterproof', 'UV protection', 'Side panels optional']
+        pros: [ 'Quick setup', 'Affordable', 'Beautiful design'],
+        cons: ['Not water proof', 'Not sunproof'],
+        features: ['5m x 5m', ]
       },
       {
         id: 't3',
-        name: 'Corporate Event Canopy',
-        price: 12000,
-        capacity: '100-150 guests',
-        image: 'from-gray-400 to-gray-600',
+        name: 'Hexagonal Tent',
+        price: 22000,
+        capacity: '30-40 guests',
+        image: '/tents/Hexagonal.png',
         rating: 4.8,
-        pros: ['Professional look', 'Modular design', 'Brand customization', 'Durable'],
-        cons: ['Setup time', 'Transport requirements'],
-        features: ['10m x 15m', 'Branded options', 'Sound system ready', 'Climate control']
-      }
+        pros: ['Water proof', 'Sun proof', 'Brand customization', 'Durable'],
+        cons: ['Setup time', ],
+        features: ['Has six sides and each side is 5m',  ]
+      },
+      {
+        id: 't4',
+        name: 'Pergola Tent',
+        price: 30000,
+        capacity: '20-30 guests',
+        image: '/tents/pergola.png',
+        rating: 4.9,
+        pros: ['Elegant design', 'Water resistant from above'],
+        cons: ['not specified'],
+        features: ['10m x 20m', 'White canvas', 'Clear windows', 'Flooring included']
+      },
+      {
+        id: 't5',
+        name: 'A Frame Tent',
+        price: 25000,
+        capacity: '30-40 guests',
+        image: '/tents/A-frame.png',
+        rating: 4.8,
+        pros: [ 'Waterproof',  'Sunproof'],
+        cons: ['Requires large space', 'Higher cost'],
+        features: ['Per section takes approx 50 people', 'White canvas', 'Clear windows']
+      },
+      {
+        id: 't6',
+        name: 'Cheese Tent',
+        price: 18000,
+        capacity: '20-30 guests',
+        image: '/tents/cheese.png',
+        rating: 4.7,
+        pros: ['not specified'],
+        cons: ['  Not super sunproof', 'Not waterproof'],
+        features: ['5m x 5m', 'White canvas']
+      },
+      {
+        id: 't7',
+        name: 'Stretch Tent',
+        price: 40000,
+        capacity: '60-70 guests',
+        image: '/tents/stretch.png',
+        rating: 5.0,
+        pros: ['not specified'],
+        cons: ['not specified', ],
+        features: ['10m x 20m', ]
+      },
+      {
+        id: 't8',
+        name: 'Trussing Tent',
+        price: 30000,
+        capacity: '20-30 guests',
+        image: '/tents/Trussing.png',
+        rating: 4.9,
+        pros: ['not specified'],
+        cons: ['not specified', ],
+        features: ['10m x 10m', 'White canvas', 'Clear windows']
+      },
+      {
+        id: 't9',
+        name: 'Drappery Tent',
+        price: 50000,
+        capacity: '20 guests',
+        image: '/tents/drappery.png',
+        rating: 5.0,
+        pros: ['not specified'],
+        cons: ['not specified', ],
+        features: ['20m x 20m', 'White canvas', 'Clear windows']
+      },
+      // {
+      //   id: 't10',
+      //   name: 'Sailcloth Tent',
+      //   price: 60000,
+      //   capacity: '80 guests',
+      //   image: '/tents/sailcloth.png',
+      //   rating: 4.8,
+      //   pros: ['not specified'],
+      //   cons: ['not specified', ],
+      //   features: ['15m x 15m', 'White canvas', 'Clear windows']
+      // }
+      
     ],
     chairs: [
       {
@@ -344,6 +422,98 @@ const ExploreCategories = () => {
       }
 
     ],
+    candle_stands: [
+      {
+        id: 'c1',
+        name: 'LED Candle',
+        price: 2000,
+        capacity: 'Medium',
+        image: '/candlestands/led-candles.png',
+        rating: 4.5,
+        pros: ['not specified'],
+        cons: ['not specified'],
+        features: ['not specified']
+      },
+      {
+        id: 'c2',
+        name: 'Black candle stand',
+        price: 2500,
+        capacity: 'Large',
+        image: '/candlestands/black.png',
+        rating: 4.7,
+        pros: ['not specified'],
+        cons: ['not specified'],
+        features: ['not specified']
+      },
+      {
+        id: 'c3',
+        name: 'Boho candle stand',
+        price: 2500,
+        capacity: 'Large',
+        image: '/candlestands/boho.png',
+        rating: 4.6,
+        pros: ['not specified'],
+        cons: ['not specified'],
+        features: ['not specified']
+      },
+      {
+        id: 'c4',
+        name: 'Crystal candle stand',
+        price: 2500,
+        capacity: 'Large',
+        image: '/candlestands/crystal.png',
+        rating: 4.7,
+        pros: ['not specified'],
+        cons: ['not specified'],
+        features: ['not specified']
+      },
+      {
+        id: 'c5',
+        name: 'Gold Candle stand',
+        price: 2000,
+        capacity: 'Medium',
+        image: '/candlestands/gold.png',
+        rating: 4.5,
+        pros: ['not specified'],
+        cons: ['not specified'],
+        features: ['not specified']
+      }
+    ],
+    cutlery: [
+      {
+        id: 't1',
+        name: 'Non print table cloths',
+        price: 1500,
+        capacity: '8 guests',
+        image: '/tablecloths/non-print.png',
+        rating: 4.5,
+        pros: ['not specified'],
+        cons: ['not specified'],
+        features: ['not specified']
+      },
+      {
+        id: 't2',
+        name: 'Satin Beige Table Cloth',
+        price: 2000,
+        capacity: '10 guests',
+        image: '/tablecloths/satin.png',
+        rating: 4.6,
+        pros: ['not specified'],
+        cons: ['not specified'],
+        features: ['not specified']
+      },
+      {
+        id: 't3',
+        name: 'Velvet Table Cloths',
+        price: 1000,
+        capacity: '4 guests',
+        image: '/tablecloths/velvet.png',
+        rating: 4.4,
+        pros: ['not specified'],
+        cons: ['not specified'],
+        features: ['not specified']
+      }
+    ],
     balloons: [
       {
         id: 'b1',
@@ -505,8 +675,8 @@ const ExploreCategories = () => {
                     <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 mb-8">
                       <div className="flex items-center justify-between">
                         <div>
-                          <p className="text-3xl font-bold text-green-400 font-merienda">KSh {selectedItem.price.toLocaleString()}</p>
-                          <p className="text-gray-300">{selectedItem.capacity}</p>
+                          {/* <p className="text-3xl font-bold text-green-400 font-merienda">KSh {selectedItem.price.toLocaleString()}</p> */}
+                          {/* <p className="text-gray-300">{selectedItem.capacity}</p> */}
                         </div>
                         <button className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                           <ShoppingCart className="w-5 h-5 inline mr-2" />
@@ -559,7 +729,7 @@ const ExploreCategories = () => {
                     </div>
                   </div>
 
-                  <div className="flex space-x-4">
+                  {/* <div className="flex space-x-4">
                     <button className="flex-1 px-6 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                       <Calendar className="w-5 h-5 inline mr-2" />
                       Check Availability
@@ -568,7 +738,7 @@ const ExploreCategories = () => {
                       <Shield className="w-5 h-5 inline mr-2" />
                       Get Quote
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -676,7 +846,7 @@ const ExploreCategories = () => {
                       
                       <div className="flex items-center justify-between">
                         <div>
-                          <p className="text-2xl font-bold text-green-400">KSh {item.price.toLocaleString()}</p>
+                          {/* <p className="text-2xl font-bold text-green-400">KSh {item.price.toLocaleString()}</p> */}
                         </div>
                         <button className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                           View Details

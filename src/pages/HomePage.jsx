@@ -25,18 +25,18 @@ const HomePage = ({ setCurrentPage }) => (
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 z-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-5xl lg:text-7xl font-bold leading-tight font-arizonia text-white drop-shadow-lg">
+            <h1 className="text-5xl lg:text-7xl font-bold leading-tight  text-white drop-shadow-lg">
               <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
                 Make Every
               </span>
               <br />
-              <span className="text-yellow-100 font-fancy-main drop-shadow-lg">Moment</span>
+              <span className="text-yellow-100  drop-shadow-lg">Moment</span>
               <br />
               <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent font-fancy-title">
                 Magical
               </span>
             </h1>
-            <p className="text-xl text-white leading-relaxed font-fancy-main drop-shadow font-poiret">
+            <p className="text-xl text-white leading-relaxed font-fancy-main drop-shadow ">
               Transform your special occasions into unforgettable experiences with our premium event planning and decoration services in Kenya.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 font-merienda">
@@ -69,7 +69,7 @@ const HomePage = ({ setCurrentPage }) => (
     </section>
 
     {/* Services Preview */}
-    <section className="py-20 bg-white font-merienda" data-aos="fade-up">
+    <section className="py-20 bg-white " data-aos="fade-up">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4 font-fancy-title">Our Services</h2>
@@ -100,7 +100,7 @@ const HomePage = ({ setCurrentPage }) => (
     <section className="py-20 bg-gradient-to-br from-purple-50 to-pink-50" data-aos="fade-up">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4 font-merienda">What Our Clients Say</h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4 ">What Our Clients Say</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[

@@ -5,8 +5,8 @@ const AboutPage = () => (
   <div className="pt-32 pb-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
-        <h1 className="text-5xl font-bold text-gray-800 mb-6 font-merienda">About Partystreet Kenya</h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto font-merienda">
+        <h1 className="text-5xl font-bold text-gray-800 mb-6 ">About Partystreet Kenya</h1>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto ">
           We are passionate about creating unforgettable moments through exceptional event planning and stunning decorations.
         </p>
       </div>
@@ -22,11 +22,11 @@ const AboutPage = () => (
           </p>
           <div className="grid grid-cols-2 gap-6">
             <div className="text-center">
-              <p className="text-3xl font-bold text-pink-600 font-merienda">500+</p>
+              <p className="text-3xl font-bold text-pink-600 ">500+</p>
               <p className="text-gray-600 font-merienda">Events Completed</p>
             </div>
             <div className="text-center">
-              <p className="text-3xl font-bold text-purple-600 font-merienda">4 Years</p>
+              <p className="text-3xl font-bold text-purple-600 ">4 Years</p>
               <p className="text-gray-600 font-merienda">Experience</p>
             </div>
           </div>
@@ -44,7 +44,7 @@ const AboutPage = () => (
       </div>
 
       <div className="bg-gradient-to-br from-pink-50 to-purple-50 rounded-3xl p-12 mb-20">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12 font-merienda ">Our Values</h2>
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12  ">Our Values</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             { icon: Heart, title: 'Passion', desc: 'We pour our heart into every detail of your special day' },
@@ -61,7 +61,7 @@ const AboutPage = () => (
       </div>
 
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6 font-merienda">Meet Our Team</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-6 ">Meet Our Team</h2>
         <p className="text-gray-600 mb-10 font-poiret">
           Our dedicated team of event planners, designers, and coordinators work tirelessly to ensure every event is a success. We believe in collaboration, creativity, and attention to detail.
         </p>
