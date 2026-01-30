@@ -105,7 +105,7 @@ const Contact = ({ theme = {
       `;
       
       // Create mailto link with encoded parameters
-      const mailtoLink = `mailto:TeamMandeSOBO@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailtoLink = `mailto:jassymande19@gmail.com @gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       
       // Open email client
       window.location.href = mailtoLink;
