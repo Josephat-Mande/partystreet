@@ -13,7 +13,7 @@ const AboutPage = () => (
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
         <div>
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Story</h2>
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Story lol</h2>
           <p className="text-gray-700 mb-6 leading-relaxed font-poiret">
             Founded with a vision to transform ordinary celebrations into extraordinary experiences, Partstreet Kenya has been at the forefront of event planning and decoration services across the country. Our journey began with a simple belief: every moment deserves to be celebrated beautifully.
           </p>
