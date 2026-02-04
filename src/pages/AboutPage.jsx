@@ -18,7 +18,7 @@ const AboutPage = () => (
             Founded with a vision to transform ordinary celebrations into extraordinary experiences, Partstreet Kenya has been at the forefront of event planning and decoration services across the country. Our journey began with a simple belief: every moment deserves to be celebrated beautifully.
           </p>
           <p className="text-gray-700 mb-6 leading-relaxed  font-poiret">
-            Over the years, we have had the privilege of being part of countless love stories, milestone celebrations, and corporate achievements. Each event we touch becomes a canvas for our creativity and passion.
+            Over the years lol, we have had the privilege of being part of countless love stories, milestone celebrations, and corporate achievements. Each event we touch becomes a canvas for our creativity and passion.
           </p>
           <div className="grid grid-cols-2 gap-6">
             <div className="text-center">
