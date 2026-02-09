@@ -15,7 +15,7 @@ const AboutPage = () => (
         <div>
           <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Story lol</h2>
           <p className="text-gray-700 mb-6 leading-relaxed font-poiret">
-            Founded with a vision to transform ordinary celebrations into extraordinary experiences, Partstreet Kenya has been at the forefront of event planning and decoration services across the country. Our journey began with a simple belief: every moment deserves to be celebrated beautifully.
+            Founded with a vision to transform ordinary celebrations into extraordinhary experiences, Partstreet Kenya has been at the forefront of event planning and decoration services across the country. Our journey began with a simple belief: every moment deserves to be celebrated beautifully.
           </p>
           <p className="text-gray-700 mb-6 leading-relaxed  font-poiret">
             Over the years lol, we have had the privilege of being part of countless love stories, milestone celebrations, and corporate achievements. Each event we touch becomes a canvas for our creativity and passion.
