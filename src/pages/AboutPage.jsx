@@ -7,8 +7,8 @@ const AboutPage = () => (
       <div className="text-center mb-16">
         <h1 className="text-5xl font-bold text-gray-800 mb-6 ">About Partystreet Kenya : (charity version for the unpaid page)lol </h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto ">
-          We are passionate and about creating unforgettable moments through exceptional event planning and stunning memories plus decorations and .
-        </p> 
+          We are passionate and about creating unforgettable moments through exceptional event planning and stunning memories plus decorations and .n
+      </p> 
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
