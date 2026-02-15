@@ -5,7 +5,7 @@ const AboutPage = () => (
   <div className="pt-32 pb-20">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
-        <h1 className="text-5xl font-bold text-gray-800 mb-6 ">About Partystreet Kenya : (charity version for the unpaid page)lol </h1>
+        <h1 className="text-5xl font-bold text-gray-800 mb-6 ">About Partystreet Kenya : (charity version for the whole page)lol </h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto ">
           We are passionate and about creating unforgettable moments through exceptional event planning and stunning memories plus more decorations and .n
       </p> 
